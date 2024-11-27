@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="resumeForm">
+        <h1>Dynamic Resume Builder milstone-3</h1>
+
+        <fieldset>
+            <h2>Personal Information</h2>
+            <label for="profilePicture">Profile Picture:</label><br>
+            <input type="file" id="profilePicture" accept="image/*"><br>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" required><br>
+
+            <label for="contactNumber">Contact Number:</label><br>
+            <input type="text" id="contactNumber" required><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" required><br>
+        </fieldset>
+
+        <fieldset>
+            <label for="education">Education:</label><br>
+            <textarea id="education" placeholder="Enter your education details" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <label for="skills">Skills:</label><br>
+            <textarea id="skills" placeholder="Enter your skills" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <label for="experience">Experience:</label><br>
+            <textarea id="experience" placeholder="Enter your experience" required></textarea>
+        </fieldset>
+
+        <button type="submit"><b>Generate Your Resume</b></button>
+    </form>
+
+    <div id="resumeOutput" style="display: none;">
+        
+        <div id="resumeContent"></div>
+        <button type="button" id="goBackBtn">Go Back to Edit</button>
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
